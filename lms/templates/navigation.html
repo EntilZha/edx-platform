@@ -43,8 +43,9 @@ site_status_msg = get_site_status_msg(course_id)
 
   <h1 class="logo">
     <a href="${marketing_link('ROOT')}">
+      <img src="/static/images/snowgeek-logo.png" style="height:63px;margin-top:-10px;"/>
       <%block name="navigation_logo">
-        <img src="${static.url(branding.get_logo_url(request.META.get('HTTP_HOST')))}" alt="${settings.PLATFORM_NAME} ${_('Home')}" />
+        <img src="${static.url(branding.get_logo_url(request.META.get('HTTP_HOST')))}" alt="${settings.PLATFORM_NAME} ${_('Home')}" style="margin-top:-10px"/>
       </%block>
     </a>
   </h1>
