@@ -13,16 +13,6 @@
               ${_("About")}
           </a>
           </li>
-          <li class="nav-colophon-02">
-          <a id="jobs" href="${marketing_link('JOBS')}">
-              ${_("Jobs")}
-          </a>
-          </li>
-          <li class="nav-colophon-03">
-          <a id="press" href="${marketing_link('PRESS')}">
-              ${_("Press")}
-          </a>
-          </li>
           <li class="nav-colophon-04">
           <a id="faq" href="${marketing_link('FAQ')}">
               ${_("FAQ")}
@@ -36,8 +26,13 @@
       </ol>
       </nav>
 
+      <div class="colophon-about" style="margin-bottom:20px;">
+        <img src="${static.url('images/snowgeek-logo.png')}" style="width:auto;"/>
+
+        <p>${_("SnowGeek is an organization dedicated to excellence and openness in Avalanche Education and Snow Science. SnowGeek edX is the educational branch focused on achieving excellence through innovative education which is free for anyone, anywhere, anytime.")}</p>
+      </div>
       <div class="colophon-about">
-        <img src="${static.url('images/header-logo.png')}" />
+        <img src="${static.url('images/header-logo.png')}" style="margin-left:45px;"/>
 
         <p>${_("{platform_name} is a non-profit created by founding partners {Harvard} and {MIT} whose mission is to bring the best of higher education to students of all ages anywhere in the world, wherever there is Internet access. {platform_name}'s free online MOOCs are interactive and subjects include computer science, public health, and artificial intelligence.").format(platform_name="EdX", Harvard="Harvard", MIT="MIT")}</p>
       </div>
